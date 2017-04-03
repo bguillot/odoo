@@ -422,7 +422,7 @@ instance.web.ListView = instance.web.View.extend( /** @lends instance.web.ListVi
             if (range_stop > total) {
                 range_stop = total;
             }
-            spager = _.str.sprintf(_t("%d-%d of %d"), range_start, range_stop, total);
+            spager = _.str.sprintf(_t("Resultat : %d"), total);
         }
 
         this.$pager.find('.oe_list_pager_state').text(spager);
